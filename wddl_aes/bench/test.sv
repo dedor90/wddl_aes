@@ -31,13 +31,13 @@ program tb (ifc.bench ds);
 //        ds.cb.sa20_n[7:0] <= '0; ds.cb.sa21_n[7:0] <= '0; ds.cb.sa22_n[7:0] <= '0; ds.cb.sa23_n[7:0] <= '0;
 //        ds.cb.sa30_n[7:0] <= '0; ds.cb.sa31_n[7:0] <= '0; ds.cb.sa32_n[7:0] <= '0; ds.cb.sa33_n[7:0] <= '0;
 
-        ds.cb.sa00_next[7:0] <= '1; ds.cb.sa01_next[7:0] <= '1; ds.cb.sa02_next[7:0] <= '1; ds.cb.sa03_next[7:0] <= '1;
+        ds.cb.sa00_next[7:0] <= 8'b10101010; ds.cb.sa01_next[7:0] <= '1; ds.cb.sa02_next[7:0] <= '1; ds.cb.sa03_next[7:0] <= '1;
         ds.cb.sa10_next[7:0] <= '1; ds.cb.sa11_next[7:0] <= '1; ds.cb.sa12_next[7:0] <= '1; ds.cb.sa13_next[7:0] <= '1;
         ds.cb.sa20_next[7:0] <= '1; ds.cb.sa21_next[7:0] <= '1; ds.cb.sa22_next[7:0] <= '1; ds.cb.sa23_next[7:0] <= '1;
         ds.cb.sa30_next[7:0] <= '1; ds.cb.sa31_next[7:0] <= '1; ds.cb.sa32_next[7:0] <= '1; ds.cb.sa33_next[7:0] <= '1;
 
 
-        ds.cb.sa00_next_n[7:0] <= '0; ds.cb.sa01_next_n[7:0] <= '0; ds.cb.sa02_next_n[7:0] <= '0; ds.cb.sa03_next_n[7:0] <= '0;
+        ds.cb.sa00_next_n[7:0] <= 8'b01010101; ds.cb.sa01_next_n[7:0] <= '0; ds.cb.sa02_next_n[7:0] <= '0; ds.cb.sa03_next_n[7:0] <= '0;
         ds.cb.sa10_next_n[7:0] <= '0; ds.cb.sa11_next_n[7:0] <= '0; ds.cb.sa12_next_n[7:0] <= '0; ds.cb.sa13_next_n[7:0] <= '0;
         ds.cb.sa20_next_n[7:0] <= '0; ds.cb.sa21_next_n[7:0] <= '0; ds.cb.sa22_next_n[7:0] <= '0; ds.cb.sa23_next_n[7:0] <= '0;
         ds.cb.sa30_next_n[7:0] <= '0; ds.cb.sa31_next_n[7:0] <= '0; ds.cb.sa32_next_n[7:0] <= '0; ds.cb.sa33_next_n[7:0] <= '0;

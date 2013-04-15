@@ -28,8 +28,8 @@ output[7:0] 	sa_o_n;
 
 reg[7:0]    	sa_o_n;
 
-wire text_in_XOR_w_i;
-wire NOT_text_in_XOR_w_i;
+wire[7:0] text_in_XOR_w_i;
+wire[7:0] NOT_text_in_XOR_w_i;
 
 
 always @ (posedge clk) begin

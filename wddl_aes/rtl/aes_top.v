@@ -11,7 +11,7 @@ module aes_top(ifc.dut d);
 		.ld_r(d.ld_r),
 
  .text_in_r(d.text_in_r),
- .text_in_r_n(d.text_in_r),
+ .text_in_r_n(d.text_in_r_n),
 
  .w0(d.w0),  .w1(d.w1),  .w2(d.w2),  .w3(d.w3),
  .w0_n(d.w0_n),  .w1_n(d.w1_n), .w2_n(d.w2_n),  .w3_n(d.w3_n),
