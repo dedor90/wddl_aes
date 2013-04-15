@@ -7,16 +7,16 @@ program tb (ifc.bench ds);
 	
 		bit[127:0] key = 128'h20f04193bd83c6bc82ad5b2b65140618; 
 		
-        ds.cb.ld_r <= '1; 
+        ds.cb.ld_r <= '0; 
         ds.cb.text_in_r[127:0] <= '1; 
         ds.cb.text_in_r_n[127:0] <= '0;
 
-        ds.cb.w0[31:0] <= '1;
+        ds.cb.w0[31:0] <= 32'h0F0F0F0F;
         ds.cb.w1[31:0] <= '1;
         ds.cb.w2[31:0] <= '1;
         ds.cb.w3[31:0] <= '1;
 
-        ds.cb.w0_n[31:0] <= '0;
+        ds.cb.w0_n[31:0] <= 32'hF0F0F0F0;
         ds.cb.w1_n[31:0] <= '0;
         ds.cb.w2_n[31:0] <= '0;
         ds.cb.w3_n[31:0] <= '0;
