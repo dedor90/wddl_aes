@@ -21,15 +21,15 @@ program tb (ifc.bench ds);
         ds.cb.w2_n[31:0] <= '0;
         ds.cb.w3_n[31:0] <= '0;
 
-        ds.cb.sa00[7:0] <= '1; ds.cb.sa01[7:0] <= '1; ds.cb.sa02[7:0] <= '1; ds.cb.sa03[7:0] <= '1;
-        ds.cb.sa10[7:0] <= '1; ds.cb.sa11[7:0] <= '1; ds.cb.sa12[7:0] <= '1; ds.cb.sa13[7:0] <= '1;
-        ds.cb.sa20[7:0] <= '1; ds.cb.sa21[7:0] <= '1; ds.cb.sa22[7:0] <= '1; ds.cb.sa23[7:0] <= '1;
-        ds.cb.sa30[7:0] <= '1; ds.cb.sa31[7:0] <= '1; ds.cb.sa32[7:0] <= '1; ds.cb.sa33[7:0] <= '1;
+//        ds.cb.sa00[7:0] <= '1; ds.cb.sa01[7:0] <= '1; ds.cb.sa02[7:0] <= '1; ds.cb.sa03[7:0] <= '1;
+//        ds.cb.sa10[7:0] <= '1; ds.cb.sa11[7:0] <= '1; ds.cb.sa12[7:0] <= '1; ds.cb.sa13[7:0] <= '1;
+//        ds.cb.sa20[7:0] <= '1; ds.cb.sa21[7:0] <= '1; ds.cb.sa22[7:0] <= '1; ds.cb.sa23[7:0] <= '1;
+//        ds.cb.sa30[7:0] <= '1; ds.cb.sa31[7:0] <= '1; ds.cb.sa32[7:0] <= '1; ds.cb.sa33[7:0] <= '1;
 
-        ds.cb.sa00_n[7:0] <= '0; ds.cb.sa01_n[7:0] <= '0; ds.cb.sa02_n[7:0] <= '0; ds.cb.sa03_n[7:0] <= '0;
-        ds.cb.sa10_n[7:0] <= '0; ds.cb.sa11_n[7:0] <= '0; ds.cb.sa12_n[7:0] <= '0; ds.cb.sa13_n[7:0] <= '0;
-        ds.cb.sa20_n[7:0] <= '0; ds.cb.sa21_n[7:0] <= '0; ds.cb.sa22_n[7:0] <= '0; ds.cb.sa23_n[7:0] <= '0;
-        ds.cb.sa30_n[7:0] <= '0; ds.cb.sa31_n[7:0] <= '0; ds.cb.sa32_n[7:0] <= '0; ds.cb.sa33_n[7:0] <= '0;
+//        ds.cb.sa00_n[7:0] <= '0; ds.cb.sa01_n[7:0] <= '0; ds.cb.sa02_n[7:0] <= '0; ds.cb.sa03_n[7:0] <= '0;
+//        ds.cb.sa10_n[7:0] <= '0; ds.cb.sa11_n[7:0] <= '0; ds.cb.sa12_n[7:0] <= '0; ds.cb.sa13_n[7:0] <= '0;
+//        ds.cb.sa20_n[7:0] <= '0; ds.cb.sa21_n[7:0] <= '0; ds.cb.sa22_n[7:0] <= '0; ds.cb.sa23_n[7:0] <= '0;
+//        ds.cb.sa30_n[7:0] <= '0; ds.cb.sa31_n[7:0] <= '0; ds.cb.sa32_n[7:0] <= '0; ds.cb.sa33_n[7:0] <= '0;
 
         ds.cb.sa00_next[7:0] <= '1; ds.cb.sa01_next[7:0] <= '1; ds.cb.sa02_next[7:0] <= '1; ds.cb.sa03_next[7:0] <= '1;
         ds.cb.sa10_next[7:0] <= '1; ds.cb.sa11_next[7:0] <= '1; ds.cb.sa12_next[7:0] <= '1; ds.cb.sa13_next[7:0] <= '1;

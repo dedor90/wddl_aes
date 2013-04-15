@@ -16,6 +16,6 @@ module top();
    initial $vcdpluson;
 
    ifc IFC(clk); 		// instantiate the interface file
-   aes_addroundkey_wddl dut(IFC.dut); 
+   aes_top dut(IFC.dut); 
    tb test_bench_top(IFC.bench);
 endmodule

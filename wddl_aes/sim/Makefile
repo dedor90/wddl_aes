@@ -1,6 +1,5 @@
 #MODULES= ../rtl/submodules/* ../rtl/aes_rcon.sv ../rtl/aes_sbox.sv ../rtl/aes_inv_sbox.nl.sv ../rtl/aes_xor.sv ../rtl/aes_addroundkey.sv ../rtl/aes_key_expand_128.sv ../rtl/aes_cipher_top.sv ../rtl/aes_inv_cipher_top.sv ../rtl/aes_top.sv
-MODULES = ../rtl/wddl/xor/* ../rtl/aes_xor_wddl.v ../rtl/aes_addroundkey_wddl.v
-
+MODULES = ../rtl/wddl/xor/* ../rtl/aes_xor_wddl.v ../rtl/aes_addroundkey_wddl.v ../rtl/aes_top.v
 
 INTERFACE= ../bench/interface.sv
 TOP = ../bench/top.sv
