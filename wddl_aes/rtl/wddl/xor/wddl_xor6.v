@@ -1,6 +1,7 @@
-//TODO needs work 
+//TODO needs work
 
-module  wddl_xor4
+module  wddl_xor6
+
 (
  d0_p_in
 ,d0_n_in
