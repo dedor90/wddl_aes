@@ -10,7 +10,7 @@
 
 module aes_addroundkey_wddl (clk, ld_r, 
         text_in_r,
-        text_in,r_n,
+        text_in_r_n,
         w0, w1, w2, w3,
         w0_n, w1_n, w2_n, w3_n,
 
