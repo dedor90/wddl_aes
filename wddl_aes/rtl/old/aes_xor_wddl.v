@@ -28,8 +28,8 @@ output[7:0] 	sa_o_n;
 
 reg[7:0]    	sa_o_n;
 
-reg[7:0] text_in_XOR_w_i;
-reg[7:0] NOT_text_in_XOR_w_i;
+wire[7:0] text_in_XOR_w_i;
+wire[7:0] NOT_text_in_XOR_w_i;
 
 
 always @ (posedge clk) begin
@@ -40,7 +40,8 @@ end
 
 //wddl xor
 
-wddl_xor2  custom_XOR(
+wddl_xor2 #(8)    XOR
+(
  .d0_p_in ( text_in )
 ,.d0_n_in ( text_in_n  )
 ,.d1_p_in ( w_i )
