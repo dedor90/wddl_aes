@@ -80,10 +80,14 @@ wire	[31:0]	rcon_n;
 
 ///WDDL XORS/////////////////
 //
-wire w_0, NOT_w_0;
-wire w_1, NOT_w_1;
-wire w_2, NOT_w_2;
-wire w_3, NOT_w_3;
+wire [31:0] w_0;
+wire [31:0] NOT_w_0;
+wire [31:0] w_1;
+wire [31:0] NOT_w_1;
+wire [31:0] w_2;
+wire [31:0] NOT_w_2;
+wire [31:0] w_3; 
+wire [31:0]NOT_w_3;
 
 
 

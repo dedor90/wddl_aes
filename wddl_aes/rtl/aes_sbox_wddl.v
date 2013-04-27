@@ -61,7 +61,7 @@
 
 `timescale 1ns/1ps
 
-module aes_sbox(a,d);
+module aes_sbox_wddl (a,a_n,d,d_n);
 input	[7:0]	a;
 input   [7:0]   a_n;
 output	[7:0]	d;

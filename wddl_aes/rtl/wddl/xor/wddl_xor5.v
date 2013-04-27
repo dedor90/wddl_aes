@@ -46,8 +46,8 @@ wddl_xor4 #(WIDTH)  U_XOR_A
 
 wddl_xor2 #(WIDTH)    U_XOR_B
 (
- .d0_p_in   ( da_p_in   )
-,.d0_n_in   ( da_n_in   )
+ .d0_p_in   ( da_p_w   )
+,.d0_n_in   ( da_n_w   )
 ,.d1_p_in   ( d4_p_in   )
 ,.d1_n_in   ( d4_n_in   )
 ,.d_p_out   ( d_p_out    )

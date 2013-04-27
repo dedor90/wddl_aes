@@ -40,7 +40,7 @@ end
 
 //wddl xor
 
-wddl_xor2  custom_XOR(
+wddl_xor2 #(8)  custom_XOR(
  .d0_p_in ( text_in )
 ,.d0_n_in ( text_in_n  )
 ,.d1_p_in ( w_i )

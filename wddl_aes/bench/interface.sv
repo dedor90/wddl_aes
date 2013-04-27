@@ -39,6 +39,7 @@ endclocking
         
 input		clk,
 input 		rst,
+input		ld,
 input 		key,
 input 		text_in,
 output 		text_out,

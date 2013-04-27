@@ -4,14 +4,14 @@
 
 module aes_top(ifc.dut d);
 
-	aes_cipher_top cipher(
+	aes_cipher_top_wddl cipher(
 		.clk(d.clk),
 		.rst(d.rst),
 		.ld(d.ld),
 		.done(d.done),
 		.key(d.key),
-		.text_in(text_in),
-		.text_out(text_out)
+		.text_in(d.text_in),
+		.text_out(d.text_out)
 	);
 
 
