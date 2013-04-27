@@ -12,6 +12,57 @@
 
 interface ifc (input bit clk);
 
+	logic rst;
+	logic ld;
+	logic [127:0] key;
+	logic [127:0] text_in;
+	
+	logic done;
+	logic [127:0] text_out;
+
+
+
+    clocking cb @(posedge clk);
+//        default output #1;
+    
+    	output rst;
+	output ld;
+	output key;
+	output text_in;
+	
+	input text_out;
+	input done;
+
+endclocking
+
+    modport dut (
+        
+input		clk,
+input 		rst,
+input 		key,
+input 		text_in,
+output 		text_out,
+output		done
+
+
+	);
+
+  modport bench (clocking cb);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 logic		ld_r;
 
 logic [127:0]	text_in_r;
@@ -111,5 +162,8 @@ input sa30_next_n, input sa31_next_n, input sa32_next_n, input sa33_next_n
 
 	);
 
-    modport bench (clocking cb);
+  modport bench (clocking cb);
+*/
+
+
 endinterface

@@ -78,6 +78,16 @@ wire	[31:0]	subword_n;
 wire	[31:0]	rcon_n;
 
 
+///WDDL XORS/////////////////
+//
+wire w_0, NOT_w_0;
+wire w_1, NOT_w_1;
+wire w_2, NOT_w_2;
+wire w_3, NOT_w_3;
+
+
+
+
 assign wo_0 = w[0];
 assign wo_1 = w[1];
 assign wo_2 = w[2];
@@ -100,14 +110,6 @@ always @(posedge clk)	w[2] <= #1 kld ? ~key[063:032] : NOT_w_2;
 
 always @(posedge clk)	w[3] <= #1 kld ? key[031:000] : w_3;
 always @(posedge clk)	w[3] <= #1 kld ? ~key[031:000] : NOT_w_3;
-
-
-///WDDL XORS/////////////////
-//
-wire w_0, NOT_w_0;
-wire w_1, NOT_w_1;
-wire w_2, NOT_w_2;
-wire w_3, NOT_w_3;
 
 
 wddl_xor3 #(32)    XOR_W0

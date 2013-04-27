@@ -138,6 +138,45 @@ wire	[7:0]	sa30_mc_n, sa31_mc_n, sa32_mc_n, sa33_mc_n;
 
 
 
+//wires 
+//
+wire [7:0] sa00_mc_XOR_w0_31_24, NOT_sa00_mc_XOR_w0_31_24;
+wire [7:0] sa01_mc_XOR_w1_31_24, NOT_sa01_mc_XOR_w1_31_24;
+wire [7:0] sa02_mc_XOR_w2_31_24, NOT_sa02_mc_XOR_w2_31_24;
+wire [7:0] sa03_mc_XOR_w3_31_24, NOT_sa03_mc_XOR_w3_31_24;
+wire [7:0] sa10_mc_XOR_w0_23_16, NOT_sa10_mc_XOR_w0_23_16;
+wire [7:0] sa11_mc_XOR_w1_23_16, NOT_sa11_mc_XOR_w1_23_16;
+wire [7:0] sa12_mc_XOR_w2_23_16, NOT_sa12_mc_XOR_w2_23_16;
+wire [7:0] sa13_mc_XOR_w3_23_16, NOT_sa13_mc_XOR_w3_23_16;
+wire [7:0] sa20_mc_XOR_w0_15_08, NOT_sa20_mc_XOR_w0_15_08;
+wire [7:0] sa21_mc_XOR_w1_15_08, NOT_sa21_mc_XOR_w1_15_08;
+wire [7:0] sa22_mc_XOR_w2_15_08, NOT_sa22_mc_XOR_w2_15_08;
+wire [7:0] sa23_mc_XOR_w3_15_08, NOT_sa23_mc_XOR_w3_15_08;
+wire [7:0] sa30_mc_XOR_w0_07_00, NOT_sa30_mc_XOR_w0_07_00;
+wire [7:0] sa31_mc_XOR_w1_07_00, NOT_sa31_mc_XOR_w1_07_00;
+wire [7:0] sa32_mc_XOR_w2_07_00, NOT_sa32_mc_XOR_w2_07_00;
+wire [7:0] sa33_mc_XOR_w3_07_00, NOT_sa33_mc_XOR_w3_07_00;
+
+wire [7:0] sa00_sr_XOR_w0_31_24, NOT_sa00_sr_XOR_w0_31_24;
+wire [7:0] sa01_sr_XOR_w1_31_24, NOT_sa01_sr_XOR_w1_31_24;
+wire [7:0] sa02_sr_XOR_w2_31_24, NOT_sa02_sr_XOR_w2_31_24;
+wire [7:0] sa03_sr_XOR_w3_31_24, NOT_sa03_sr_XOR_w3_31_24;
+wire [7:0] sa10_sr_XOR_w0_23_16, NOT_sa10_sr_XOR_w0_23_16;
+wire [7:0] sa11_sr_XOR_w1_23_16, NOT_sa11_sr_XOR_w1_23_16;
+wire [7:0] sa12_sr_XOR_w2_23_16, NOT_sa12_sr_XOR_w2_23_16;
+wire [7:0] sa13_sr_XOR_w3_23_16, NOT_sa13_sr_XOR_w3_23_16;
+wire [7:0] sa20_sr_XOR_w0_15_08, NOT_sa20_sr_XOR_w0_15_08;
+wire [7:0] sa21_sr_XOR_w1_15_08, NOT_sa21_sr_XOR_w1_15_08;
+wire [7:0] sa22_sr_XOR_w2_15_08, NOT_sa22_sr_XOR_w2_15_08;
+wire [7:0] sa23_sr_XOR_w3_15_08, NOT_sa23_sr_XOR_w3_15_08;
+wire [7:0] sa30_sr_XOR_w0_07_00, NOT_sa30_sr_XOR_w0_07_00;
+wire [7:0] sa31_sr_XOR_w1_07_00, NOT_sa31_sr_XOR_w1_07_00;
+wire [7:0] sa32_sr_XOR_w2_07_00, NOT_sa32_sr_XOR_w2_07_00;
+wire [7:0] sa33_sr_XOR_w3_07_00, NOT_sa33_sr_XOR_w3_07_00;
+
+
+
+
 
 
 
@@ -472,7 +511,7 @@ aes_key_expand_128_wddl u0(
 	.wo_0_n(		w0_n	),
 	.wo_1_n(		w1_n	),
 	.wo_2_n(		w2_n	),
-	.wo_3_n(		w3_n	),
+	.wo_3_n(		w3_n	)
 );
 
 //////////SBOX/////////////////////////////////
@@ -500,44 +539,6 @@ aes_sbox_wddl us33(	.a(	sa33	), .a_n( sa33_n) , .d(	sa33_sub	) , .d_n(	sa33_sub_
 //***************PORT MAPPINGS ********************************
 //
 //
-
-//wires 
-//
-wire [7:0] sa00_mc_XOR_w0_31_24, NOT_sa00_mc_XOR_w0_31_24;
-wire [7:0] sa01_mc_XOR_w1_31_24, NOT_sa01_mc_XOR_w1_31_24;
-wire [7:0] sa02_mc_XOR_w2_31_24, NOT_sa02_mc_XOR_w2_31_24;
-wire [7:0] sa03_mc_XOR_w3_31_24, NOT_sa03_mc_XOR_w3_31_24;
-wire [7:0] sa10_mc_XOR_w0_23_16, NOT_sa10_mc_XOR_w0_23_16;
-wire [7:0] sa11_mc_XOR_w1_23_16, NOT_sa11_mc_XOR_w1_23_16;
-wire [7:0] sa12_mc_XOR_w2_23_16, NOT_sa12_mc_XOR_w2_23_16;
-wire [7:0] sa13_mc_XOR_w3_23_16, NOT_sa13_mc_XOR_w3_23_16;
-wire [7:0] sa20_mc_XOR_w0_15_08, NOT_sa20_mc_XOR_w0_15_08;
-wire [7:0] sa21_mc_XOR_w1_15_08, NOT_sa21_mc_XOR_w1_15_08;
-wire [7:0] sa22_mc_XOR_w2_15_08, NOT_sa22_mc_XOR_w2_15_08;
-wire [7:0] sa23_mc_XOR_w3_15_08, NOT_sa23_mc_XOR_w3_15_08;
-wire [7:0] sa30_mc_XOR_w0_07_00, NOT_sa30_mc_XOR_w0_07_00;
-wire [7:0] sa31_mc_XOR_w1_07_00, NOT_sa31_mc_XOR_w1_07_00;
-wire [7:0] sa32_mc_XOR_w2_07_00, NOT_sa32_mc_XOR_w2_07_00;
-wire [7:0] sa33_mc_XOR_w3_07_00, NOT_sa33_mc_XOR_w3_07_00;
-
-wire [7:0] sa00_sr_XOR_w0_31_24, NOT_sa00_sr_XOR_w0_31_24;
-wire [7:0] sa01_sr_XOR_w1_31_24, NOT_sa01_sr_XOR_w1_31_24;
-wire [7:0] sa02_sr_XOR_w2_31_24, NOT_sa02_sr_XOR_w2_31_24;
-wire [7:0] sa03_sr_XOR_w3_31_24, NOT_sa03_sr_XOR_w3_31_24;
-wire [7:0] sa10_sr_XOR_w0_23_16, NOT_sa10_sr_XOR_w0_23_16;
-wire [7:0] sa11_sr_XOR_w1_23_16, NOT_sa11_sr_XOR_w1_23_16;
-wire [7:0] sa12_sr_XOR_w2_23_16, NOT_sa12_sr_XOR_w2_23_16;
-wire [7:0] sa13_sr_XOR_w3_23_16, NOT_sa13_sr_XOR_w3_23_16;
-wire [7:0] sa20_sr_XOR_w0_15_08, NOT_sa20_sr_XOR_w0_15_08;
-wire [7:0] sa21_sr_XOR_w1_15_08, NOT_sa21_sr_XOR_w1_15_08;
-wire [7:0] sa22_sr_XOR_w2_15_08, NOT_sa22_sr_XOR_w2_15_08;
-wire [7:0] sa23_sr_XOR_w3_15_08, NOT_sa23_sr_XOR_w3_15_08;
-wire [7:0] sa30_sr_XOR_w0_07_00, NOT_sa30_sr_XOR_w0_07_00;
-wire [7:0] sa31_sr_XOR_w1_07_00, NOT_sa31_sr_XOR_w1_07_00;
-wire [7:0] sa32_sr_XOR_w2_07_00, NOT_sa32_sr_XOR_w2_07_00;
-wire [7:0] sa33_sr_XOR_w3_07_00, NOT_sa33_sr_XOR_w3_07_00;
-
-
 
 
 //***** 1 ******* 

@@ -79,7 +79,7 @@ always @(posedge clk)
         out <= #1 32'h01_00_00_00;
         //out_n <= #1 !out;
     end
-    else		
+    else begin		
         out <= #1 frcon(rcnt_next);
         //out_n <= #1 !out;
     end

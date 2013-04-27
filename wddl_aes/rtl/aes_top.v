@@ -4,8 +4,18 @@
 
 module aes_top(ifc.dut d);
 
+	aes_cipher_top cipher(
+		.clk(d.clk),
+		.rst(d.rst),
+		.ld(d.ld),
+		.done(d.done),
+		.key(d.key),
+		.text_in(text_in),
+		.text_out(text_out)
+	);
 
 
+/*
 	aes_addroundkey_wddl addround (
 		.clk(d.clk),
 		.ld_r(d.ld_r),
@@ -36,10 +46,7 @@ module aes_top(ifc.dut d);
  .sa20_next_n(d.sa20_next_n),  .sa21_next_n(d.sa21_next_n),  .sa22_next_n(d.sa22_next_n),  .sa23_next_n(d.sa23_next_n),
  .sa30_next_n(d.sa30_next_n),  .sa31_next_n(d.sa31_next_n),  .sa32_next_n(d.sa32_next_n),  .sa33_next_n(d.sa33_next_n)
 
-
-
-
 	);
-
+*/
 endmodule
 

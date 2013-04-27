@@ -52,7 +52,7 @@ wddl_xor5 #(8)  MIXCOL_31_24
 ,   .d4_n_in(sa3_sr_n   )
 ,   .d_p_out(sa0_mc   )
 ,   .d_n_out(sa0_mc_n   )
-};
+);
 
 wddl_xor5 #(8)  MIXCOL_23_16
 (
@@ -68,7 +68,7 @@ wddl_xor5 #(8)  MIXCOL_23_16
 ,   .d4_n_in(sa3_sr_n   )
 ,   .d_p_out(sa1_mc   )
 ,   .d_n_out(sa1_mc_n   )
-};
+);
 
 wddl_xor5 #(8)  MIXCOL_15_08
 (
@@ -84,7 +84,7 @@ wddl_xor5 #(8)  MIXCOL_15_08
 ,   .d4_n_in(sa3_sr_n   )
 ,   .d_p_out(sa2_mc   )
 ,   .d_n_out(sa2_mc_n   )
-};
+);
 
 wddl_xor5 #(8)  MIXCOL_07_00
 (
@@ -100,7 +100,7 @@ wddl_xor5 #(8)  MIXCOL_07_00
 ,   .d4_n_in(xtime_sa3_sr_n   )
 ,   .d_p_out(sa3_mc   )
 ,   .d_n_out(sa3_mc_n   )
-};
+);
 
 
 

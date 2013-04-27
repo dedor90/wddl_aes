@@ -4,10 +4,10 @@
 program tb (ifc.bench ds);
 
 	task do_cycle;
-	
+/*	
 		bit[127:0] key = 128'h20f04193bd83c6bc82ad5b2b65140618; 
 		
-        ds.cb.ld_r <= '0; 
+        ds.cb.ld_r <= '1; 
         ds.cb.text_in_r[127:0] <= '1; 
         ds.cb.text_in_r_n[127:0] <= '0;
 
@@ -47,7 +47,7 @@ program tb (ifc.bench ds);
 
 
 	@(ds.cb);
-
+*/
 	endtask
 
 
