@@ -159,6 +159,8 @@ always @(posedge clk)
 	else		done <= #1 '0;
 
 always @(posedge clk) if(ld) text_in_r <= #1 text_in;
+always @(posedge clk) if(ld) text_in_r_n <= #1 ~text_in;
+
 always @(posedge clk) ld_r <= #1 ld;
 
 ////////////////////////////////////////////////////////////////////

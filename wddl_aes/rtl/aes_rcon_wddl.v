@@ -72,7 +72,7 @@ reg [31:0]  out_n;
 reg	[3:0]	rcnt;
 wire	[3:0]	rcnt_next;
 
-assign out_n = !out;
+assign out_n = ~out;
 
 always @(posedge clk)
     if(kld)	begin
