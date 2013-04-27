@@ -59,7 +59,7 @@
 `timescale 1ns/1ps
 
 
-module aes_key_expand_128(clk, kld, key, wo_0, wo_1, wo_2, wo_3, wo_0_n, wo_1_n, wo_2_n, wo_3_n );
+module aes_key_expand_128_wddl (clk, kld, key, wo_0, wo_1, wo_2, wo_3, wo_0_n, wo_1_n, wo_2_n, wo_3_n );
 input		clk;
 input		kld;
 input	[127:0]	key;

@@ -61,7 +61,7 @@
 
 `timescale 1ns/1ps  
 
-module aes_rcon(clk, kld, out, out_n);
+module aes_rcon_wddl (clk, kld, out, out_n);
 input		clk;
 input		kld;
 output	[31:0]	out;
