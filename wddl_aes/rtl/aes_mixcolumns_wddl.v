@@ -110,9 +110,9 @@ wddl_xor5 #(8)  MIXCOL_07_00
 wddl_xor2 #(8)    XTIME_SA0_SR
 (
  .d0_p_in ({sa0_sr[6:0],1'b0} )
-,.d0_n_in ({sa0_sr_n[6:0], 1'b0} )
+,.d0_n_in ({sa0_sr_n[6:0], 1'b1} )
 ,.d1_p_in (8'h1b&{8{sa0_sr[7]}} )       //NEEDS SOME MODIFICATION FOR COMPLEMENTATRY??? TODO
-,.d1_n_in (8'h1b&{8{sa0_sr_n[7]}}   )
+,.d1_n_in (8'he4|{8{sa0_sr_n[7]}}   )
 ,.d_p_out ( xtime_sa0_sr)
 ,.d_n_out ( xtime_sa0_sr_n)
 );
@@ -120,9 +120,9 @@ wddl_xor2 #(8)    XTIME_SA0_SR
 wddl_xor2 #(8)    XTIME_SA1_SR
 (
  .d0_p_in ({sa1_sr[6:0],1'b0} )
-,.d0_n_in ({sa1_sr_n[6:0], 1'b0} )
+,.d0_n_in ({sa1_sr_n[6:0], 1'b1} )
 ,.d1_p_in (8'h1b&{8{sa1_sr[7]}}  )
-,.d1_n_in (8'h1b&{8{sa1_sr_n[7]}}   )
+,.d1_n_in (8'he4|{8{sa1_sr_n[7]}}   )
 ,.d_p_out ( xtime_sa1_sr)
 ,.d_n_out ( xtime_sa1_sr_n)
 );
@@ -130,9 +130,9 @@ wddl_xor2 #(8)    XTIME_SA1_SR
 wddl_xor2 #(8)    XTIME_SA2_SR
 (
  .d0_p_in ({sa2_sr[6:0],1'b0} )
-,.d0_n_in ({sa2_sr_n[6:0], 1'b0} )
+,.d0_n_in ({sa2_sr_n[6:0], 1'b1} )
 ,.d1_p_in (8'h1b&{8{sa2_sr[7]}}  )
-,.d1_n_in (8'h1b&{8{sa2_sr_n[7]}}   )
+,.d1_n_in (8'he4|{8{sa2_sr_n[7]}}   )
 ,.d_p_out ( xtime_sa2_sr)
 ,.d_n_out ( xtime_sa2_sr_n)
 );
@@ -140,9 +140,9 @@ wddl_xor2 #(8)    XTIME_SA2_SR
 wddl_xor2 #(8)    XTIME_SA3_SR
 (
  .d0_p_in ({sa3_sr[6:0],1'b0} )
-,.d0_n_in ({sa3_sr_n[6:0], 1'b0} )
+,.d0_n_in ({sa3_sr_n[6:0], 1'b1} )
 ,.d1_p_in (8'h1b&{8{sa3_sr[7]}}  )
-,.d1_n_in (8'h1b&{8{sa3_sr_n[7]}}   )
+,.d1_n_in (8'he4|{8{sa3_sr_n[7]}}   )
 ,.d_p_out ( xtime_sa3_sr)
 ,.d_n_out ( xtime_sa3_sr_n)
 );

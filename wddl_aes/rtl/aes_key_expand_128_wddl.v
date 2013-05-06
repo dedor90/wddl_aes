@@ -107,13 +107,13 @@ always @(posedge clk)	w[0] <= #1 kld ? key[127:096] : w_0;
 always @(posedge clk)	w_n[0] <= #1 kld ? ~key[127:096] : NOT_w_0;
 
 always @(posedge clk)	w[1] <= #1 kld ? key[095:064] : w_1;
-always @(posedge clk)	w[1] <= #1 kld ? ~key[095:064] : NOT_w_1;
+always @(posedge clk)	w_n[1] <= #1 kld ? ~key[095:064] : NOT_w_1;
 
 always @(posedge clk)	w[2] <= #1 kld ? key[063:032] : w_2;
-always @(posedge clk)	w[2] <= #1 kld ? ~key[063:032] : NOT_w_2;
+always @(posedge clk)	w_n[2] <= #1 kld ? ~key[063:032] : NOT_w_2;
 
 always @(posedge clk)	w[3] <= #1 kld ? key[031:000] : w_3;
-always @(posedge clk)	w[3] <= #1 kld ? ~key[031:000] : NOT_w_3;
+always @(posedge clk)	w_n[3] <= #1 kld ? ~key[031:000] : NOT_w_3;
 
 
 wddl_xor3 #(32)    XOR_W0
