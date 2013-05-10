@@ -1,6 +1,5 @@
-//TODO needs work
 
-module  wddl_xor6
+module  wddl_xor6_8
 
 (
  d0_p_in
@@ -20,20 +19,19 @@ module  wddl_xor6
 ,d_n_out
 );
 
-parameter WIDTH      = 1;
 
-input   [WIDTH-1 : 0]   d0_p_in, d0_n_in;
-input   [WIDTH-1 : 0]   d1_p_in, d1_n_in;
-input   [WIDTH-1 : 0]   d2_p_in, d2_n_in;
-input   [WIDTH-1 : 0]   d3_p_in, d3_n_in;
-input 	[WIDTH-1 : 0]   d4_p_in, d4_n_in;
-input 	[WIDTH-1 : 0]   d5_p_in, d5_n_in;
-output  [WIDTH-1 : 0]   d_p_out, d_n_out;
+input   [7 : 0]   d0_p_in, d0_n_in;
+input   [7 : 0]   d1_p_in, d1_n_in;
+input   [7 : 0]   d2_p_in, d2_n_in;
+input   [7 : 0]   d3_p_in, d3_n_in;
+input 	[7 : 0]   d4_p_in, d4_n_in;
+input 	[7 : 0]   d5_p_in, d5_n_in;
+output  [7 : 0]   d_p_out, d_n_out;
 
-wire    [WIDTH-1 : 0]   da_p_w, da_n_w;
+wire    [7 : 0]   da_p_w, da_n_w;
 
 
-wddl_xor5 #(WIDTH)  U_XOR_A
+wddl_xor5_8 U_XOR_A
 (
  .d0_p_in   ( d0_p_in   )
 ,.d0_n_in   ( d0_n_in   )
@@ -51,7 +49,7 @@ wddl_xor5 #(WIDTH)  U_XOR_A
 
 );
 
-wddl_xor2 #(WIDTH)    U_XOR_B
+wddl_xor2_8   U_XOR_B
 (
  .d0_p_in   ( da_p_w   )
 ,.d0_n_in   ( da_n_w   )

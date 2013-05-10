@@ -116,7 +116,7 @@ always @(posedge clk)	w[3] <= #1 kld ? key[031:000] : w_3;
 always @(posedge clk)	w_n[3] <= #1 kld ? ~key[031:000] : NOT_w_3;
 
 
-wddl_xor3 #(32)    XOR_W0
+wddl_xor3_32    XOR_W0
 (
  .d0_p_in ( w[0] )
 ,.d0_n_in ( w_n[0]  )
@@ -128,7 +128,7 @@ wddl_xor3 #(32)    XOR_W0
 ,.d_n_out ( NOT_w_0 )
 );
 
-wddl_xor4 #(32)    XOR_W1
+wddl_xor4_32    XOR_W1
 (
  .d0_p_in ( w[0] )
 ,.d0_n_in ( w_n[0]  )
@@ -142,7 +142,7 @@ wddl_xor4 #(32)    XOR_W1
 ,.d_n_out ( NOT_w_1 )
 );
 
-wddl_xor5 #(32)    XOR_W2
+wddl_xor5_32    XOR_W2
 (
  .d0_p_in ( w[0] )
 ,.d0_n_in ( w_n[0]  )
@@ -158,7 +158,7 @@ wddl_xor5 #(32)    XOR_W2
 ,.d_n_out ( NOT_w_2 )
 );
 
-wddl_xor6 #(32)    XOR_W3
+wddl_xor6_32    XOR_W3
 (
  .d0_p_in ( w[0] )
 ,.d0_n_in ( w_n[0]  )

@@ -38,7 +38,7 @@ wire    [7:0]   xtime_sa3_sr, xtime_sa3_sr_n;
 //WDDL 5 XORS
 
 
-wddl_xor5 #(8)  MIXCOL_31_24
+wddl_xor5_8  MIXCOL_31_24
 (
     .d0_p_in(xtime_sa0_sr)
 ,   .d0_n_in(xtime_sa0_sr_n   )
@@ -54,7 +54,7 @@ wddl_xor5 #(8)  MIXCOL_31_24
 ,   .d_n_out(sa0_mc_n   )
 );
 
-wddl_xor5 #(8)  MIXCOL_23_16
+wddl_xor5_8  MIXCOL_23_16
 (
     .d0_p_in(sa0_sr   )
 ,   .d0_n_in(sa0_sr_n   )
@@ -70,7 +70,7 @@ wddl_xor5 #(8)  MIXCOL_23_16
 ,   .d_n_out(sa1_mc_n   )
 );
 
-wddl_xor5 #(8)  MIXCOL_15_08
+wddl_xor5_8  MIXCOL_15_08
 (
     .d0_p_in(sa0_sr   )
 ,   .d0_n_in(sa0_sr_n   )
@@ -86,7 +86,7 @@ wddl_xor5 #(8)  MIXCOL_15_08
 ,   .d_n_out(sa2_mc_n   )
 );
 
-wddl_xor5 #(8)  MIXCOL_07_00
+wddl_xor5_8  MIXCOL_07_00
 (
     .d0_p_in(xtime_sa0_sr   )
 ,   .d0_n_in(xtime_sa0_sr_n   )
@@ -107,7 +107,7 @@ wddl_xor5 #(8)  MIXCOL_07_00
 
 //WDDL 2 XORS
 
-wddl_xor2 #(8)    XTIME_SA0_SR
+wddl_xor2_8    XTIME_SA0_SR
 (
  .d0_p_in ({sa0_sr[6:0],1'b0} )
 ,.d0_n_in ({sa0_sr_n[6:0], 1'b1} )
@@ -117,7 +117,7 @@ wddl_xor2 #(8)    XTIME_SA0_SR
 ,.d_n_out ( xtime_sa0_sr_n)
 );
 
-wddl_xor2 #(8)    XTIME_SA1_SR
+wddl_xor2_8    XTIME_SA1_SR
 (
  .d0_p_in ({sa1_sr[6:0],1'b0} )
 ,.d0_n_in ({sa1_sr_n[6:0], 1'b1} )
@@ -127,7 +127,7 @@ wddl_xor2 #(8)    XTIME_SA1_SR
 ,.d_n_out ( xtime_sa1_sr_n)
 );
 
-wddl_xor2 #(8)    XTIME_SA2_SR
+wddl_xor2_8    XTIME_SA2_SR
 (
  .d0_p_in ({sa2_sr[6:0],1'b0} )
 ,.d0_n_in ({sa2_sr_n[6:0], 1'b1} )
@@ -137,7 +137,7 @@ wddl_xor2 #(8)    XTIME_SA2_SR
 ,.d_n_out ( xtime_sa2_sr_n)
 );
 
-wddl_xor2 #(8)    XTIME_SA3_SR
+wddl_xor2_8    XTIME_SA3_SR
 (
  .d0_p_in ({sa3_sr[6:0],1'b0} )
 ,.d0_n_in ({sa3_sr_n[6:0], 1'b1} )

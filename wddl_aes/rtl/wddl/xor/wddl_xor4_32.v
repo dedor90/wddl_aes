@@ -1,4 +1,4 @@
-module  wddl_xor4
+module  wddl_xor4_32
 (
  d0_p_in
 ,d0_n_in
@@ -12,19 +12,18 @@ module  wddl_xor4
 ,d_n_out
 );
 
-parameter WIDTH      = 1;
 
-input   [WIDTH-1 : 0]   d0_p_in, d0_n_in;
-input   [WIDTH-1 : 0]   d1_p_in, d1_n_in;
-input   [WIDTH-1 : 0]   d2_p_in, d2_n_in;
-input   [WIDTH-1 : 0]   d3_p_in, d3_n_in;
-output  [WIDTH-1 : 0]   d_p_out, d_n_out;
+input   [31 : 0]   d0_p_in, d0_n_in;
+input   [31 : 0]   d1_p_in, d1_n_in;
+input   [31 : 0]   d2_p_in, d2_n_in;
+input   [31 : 0]   d3_p_in, d3_n_in;
+output  [31 : 0]   d_p_out, d_n_out;
 
-wire    [WIDTH-1 : 0]   da_p_w, da_n_w,
+wire    [31 : 0]   da_p_w, da_n_w,
                         db_p_w, db_n_w;
 
 
-wddl_xor2 #(WIDTH)    U_XOR_A
+wddl_xor2_32    U_XOR_A_32
 (
  .d0_p_in   ( d0_p_in   )
 ,.d0_n_in   ( d0_n_in   )
@@ -34,7 +33,7 @@ wddl_xor2 #(WIDTH)    U_XOR_A
 ,.d_n_out   ( da_n_w    )
 );
 
-wddl_xor2 #(WIDTH)    U_XOR_B
+wddl_xor2_32    U_XOR_B_32
 (
  .d0_p_in   ( d2_p_in   )
 ,.d0_n_in   ( d2_n_in   )
@@ -44,7 +43,7 @@ wddl_xor2 #(WIDTH)    U_XOR_B
 ,.d_n_out   ( db_n_w    )
 );
 
-wddl_xor2 #(WIDTH)    U_XOR
+wddl_xor2_32   U_XOR_32
 (
  .d0_p_in   ( da_p_w    )
 ,.d0_n_in   ( da_n_w    )

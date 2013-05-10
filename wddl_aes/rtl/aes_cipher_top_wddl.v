@@ -543,7 +543,7 @@ aes_sbox_wddl us33(	.a(	sa33	), .a_n( sa33_n) , .d(	sa33_sub	) , .d_n(	sa33_sub_
 
 //***** 1 ******* 
 
-wddl_xor2 #(8)    XOR_1
+wddl_xor2_8    XOR_1
 (
  .d0_p_in ( sa00_mc )
 ,.d0_n_in ( sa00_mc_n  )
@@ -555,7 +555,7 @@ wddl_xor2 #(8)    XOR_1
 
 //***** 2 ******* 
 
-wddl_xor2 #(8)    XOR_2
+wddl_xor2_8    XOR_2
 (
  .d0_p_in ( sa01_mc )
 ,.d0_n_in ( sa01_mc_n  )
@@ -567,7 +567,7 @@ wddl_xor2 #(8)    XOR_2
 
 //***** 3 ******* 
 
-wddl_xor2 #(8)    XOR_3
+wddl_xor2_8    XOR_3
 (
  .d0_p_in ( sa02_mc )
 ,.d0_n_in ( sa02_mc_n  )
@@ -579,7 +579,7 @@ wddl_xor2 #(8)    XOR_3
 
 //***** 4 ******* 
 
-wddl_xor2 #(8)    XOR_4
+wddl_xor2_8    XOR_4
 (
  .d0_p_in ( sa03_mc )
 ,.d0_n_in ( sa03_mc_n  )
@@ -591,7 +591,7 @@ wddl_xor2 #(8)    XOR_4
 
 //***** 5 ******* 
 
-wddl_xor2 #(8)    XOR_5
+wddl_xor2_8    XOR_5
 (
  .d0_p_in ( sa10_mc )
 ,.d0_n_in ( sa10_mc_n  )
@@ -603,7 +603,7 @@ wddl_xor2 #(8)    XOR_5
 
 //***** 6 ******* 
 
-wddl_xor2 #(8)    XOR_6
+wddl_xor2_8    XOR_6
 (
  .d0_p_in ( sa11_mc )
 ,.d0_n_in ( sa11_mc_n  )
@@ -615,7 +615,7 @@ wddl_xor2 #(8)    XOR_6
 
 //***** 7 ******* 
 
-wddl_xor2 #(8)    XOR_7
+wddl_xor2_8    XOR_7
 (
  .d0_p_in ( sa12_mc )
 ,.d0_n_in ( sa12_mc_n  )
@@ -627,7 +627,7 @@ wddl_xor2 #(8)    XOR_7
 
 //***** 8 ******* 
 
-wddl_xor2 #(8)    XOR_8
+wddl_xor2_8    XOR_8
 (
  .d0_p_in ( sa13_mc )
 ,.d0_n_in ( sa13_mc_n  )
@@ -639,7 +639,7 @@ wddl_xor2 #(8)    XOR_8
 
 //***** 9 ******* 
 
-wddl_xor2 #(8)    XOR_9
+wddl_xor2_8    XOR_9
 (
  .d0_p_in ( sa20_mc )
 ,.d0_n_in ( sa20_mc_n  )
@@ -651,7 +651,7 @@ wddl_xor2 #(8)    XOR_9
 
 //***** 10 ******* 
 
-wddl_xor2 #(8)    XOR_10
+wddl_xor2_8    XOR_10
 (
  .d0_p_in ( sa21_mc )
 ,.d0_n_in ( sa21_mc_n  )
@@ -663,7 +663,7 @@ wddl_xor2 #(8)    XOR_10
 
 //***** 11 ******* 
 
-wddl_xor2 #(8)    XOR_11
+wddl_xor2_8    XOR_11
 (
  .d0_p_in ( sa22_mc )
 ,.d0_n_in ( sa22_mc_n  )
@@ -675,7 +675,7 @@ wddl_xor2 #(8)    XOR_11
 
 //***** 12 ******* 
 
-wddl_xor2 #(8)    XOR_12
+wddl_xor2_8    XOR_12
 (
  .d0_p_in ( sa23_mc )
 ,.d0_n_in ( sa23_mc_n  )
@@ -687,7 +687,7 @@ wddl_xor2 #(8)    XOR_12
 
 //***** 13 ******* 
 
-wddl_xor2 #(8)    XOR_13
+wddl_xor2_8    XOR_13
 (
  .d0_p_in ( sa30_mc )
 ,.d0_n_in ( sa30_mc_n  )
@@ -699,7 +699,7 @@ wddl_xor2 #(8)    XOR_13
 
 //***** 14 ******* 
 
-wddl_xor2 #(8)    XOR_14
+wddl_xor2_8    XOR_14
 (
  .d0_p_in ( sa31_mc )
 ,.d0_n_in ( sa31_mc_n  )
@@ -711,7 +711,7 @@ wddl_xor2 #(8)    XOR_14
 
 //***** 15 ******* 
 
-wddl_xor2 #(8)    XOR_15
+wddl_xor2_8    XOR_15
 (
  .d0_p_in ( sa32_mc )
 ,.d0_n_in ( sa32_mc_n  )
@@ -723,7 +723,7 @@ wddl_xor2 #(8)    XOR_15
 
 //***** 16 ******* 
 
-wddl_xor2 #(8)    XOR_16
+wddl_xor2_8    XOR_16
 (
  .d0_p_in ( sa33_mc )
 ,.d0_n_in ( sa33_mc_n  )
@@ -735,7 +735,7 @@ wddl_xor2 #(8)    XOR_16
 
 //***** 17 ******* 
 
-wddl_xor2 #(8)    XOR_17
+wddl_xor2_8    XOR_17
 (
  .d0_p_in ( sa00_sr )
 ,.d0_n_in ( sa00_sr_n  )
@@ -747,7 +747,7 @@ wddl_xor2 #(8)    XOR_17
 
 //***** 18 ******* 
 
-wddl_xor2 #(8)    XOR_18
+wddl_xor2_8    XOR_18
 (
  .d0_p_in ( sa01_sr )
 ,.d0_n_in ( sa01_sr_n  )
@@ -759,7 +759,7 @@ wddl_xor2 #(8)    XOR_18
 
 //***** 19 ******* 
 
-wddl_xor2 #(8)    XOR_19
+wddl_xor2_8    XOR_19
 (
  .d0_p_in ( sa02_sr )
 ,.d0_n_in ( sa02_sr_n  )
@@ -771,7 +771,7 @@ wddl_xor2 #(8)    XOR_19
 
 //***** 20 ******* 
 
-wddl_xor2 #(8)    XOR_20
+wddl_xor2_8    XOR_20
 (
  .d0_p_in ( sa03_sr )
 ,.d0_n_in ( sa03_sr_n  )
@@ -783,7 +783,7 @@ wddl_xor2 #(8)    XOR_20
 
 //***** 21 ******* 
 
-wddl_xor2 #(8)    XOR_21
+wddl_xor2_8    XOR_21
 (
  .d0_p_in ( sa10_sr )
 ,.d0_n_in ( sa10_sr_n  )
@@ -795,7 +795,7 @@ wddl_xor2 #(8)    XOR_21
 
 //***** 22 ******* 
 
-wddl_xor2 #(8)    XOR_22
+wddl_xor2_8    XOR_22
 (
  .d0_p_in ( sa11_sr )
 ,.d0_n_in ( sa11_sr_n  )
@@ -807,7 +807,7 @@ wddl_xor2 #(8)    XOR_22
 
 //***** 23 ******* 
 
-wddl_xor2 #(8)    XOR_23
+wddl_xor2_8    XOR_23
 (
  .d0_p_in ( sa12_sr )
 ,.d0_n_in ( sa12_sr_n  )
@@ -819,7 +819,7 @@ wddl_xor2 #(8)    XOR_23
 
 //***** 24 ******* 
 
-wddl_xor2 #(8)    XOR_24
+wddl_xor2_8    XOR_24
 (
  .d0_p_in ( sa13_sr )
 ,.d0_n_in ( sa13_sr_n  )
@@ -831,7 +831,7 @@ wddl_xor2 #(8)    XOR_24
 
 //***** 25 ******* 
 
-wddl_xor2 #(8)    XOR_25
+wddl_xor2_8    XOR_25
 (
  .d0_p_in ( sa20_sr )
 ,.d0_n_in ( sa20_sr_n  )
@@ -843,7 +843,7 @@ wddl_xor2 #(8)    XOR_25
 
 //***** 26 ******* 
 
-wddl_xor2 #(8)    XOR_26
+wddl_xor2_8    XOR_26
 (
  .d0_p_in ( sa21_sr )
 ,.d0_n_in ( sa21_sr_n  )
@@ -855,7 +855,7 @@ wddl_xor2 #(8)    XOR_26
 
 //***** 27 ******* 
 
-wddl_xor2 #(8)    XOR_27
+wddl_xor2_8    XOR_27
 (
  .d0_p_in ( sa22_sr )
 ,.d0_n_in ( sa22_sr_n  )
@@ -867,7 +867,7 @@ wddl_xor2 #(8)    XOR_27
 
 //***** 28 ******* 
 
-wddl_xor2 #(8)    XOR_28
+wddl_xor2_8    XOR_28
 (
  .d0_p_in ( sa23_sr )
 ,.d0_n_in ( sa23_sr_n  )
@@ -879,7 +879,7 @@ wddl_xor2 #(8)    XOR_28
 
 //***** 29 ******* 
 
-wddl_xor2 #(8)    XOR_29
+wddl_xor2_8    XOR_29
 (
  .d0_p_in ( sa30_sr )
 ,.d0_n_in ( sa30_sr_n  )
@@ -891,7 +891,7 @@ wddl_xor2 #(8)    XOR_29
 
 //***** 30 ******* 
 
-wddl_xor2 #(8)    XOR_30
+wddl_xor2_8    XOR_30
 (
  .d0_p_in ( sa31_sr )
 ,.d0_n_in ( sa31_sr_n  )
@@ -903,7 +903,7 @@ wddl_xor2 #(8)    XOR_30
 
 //***** 31 ******* 
 
-wddl_xor2 #(8)    XOR_31
+wddl_xor2_8    XOR_31
 (
  .d0_p_in ( sa32_sr )
 ,.d0_n_in ( sa32_sr_n  )
@@ -915,7 +915,7 @@ wddl_xor2 #(8)    XOR_31
 
 //***** 32 ******* 
 
-wddl_xor2 #(8)    XOR_32
+wddl_xor2_8    XOR_32
 (
  .d0_p_in ( sa33_sr )
 ,.d0_n_in ( sa33_sr_n  )
